@@ -1,0 +1,17 @@
+path parameters -> 
+query parameters ->  limiting query number, incase of default parameters all should be given to do an execption, we got to use the optional keyword from typing
+request body -> 
+linking a model to an sqlite database
+pyndantic -> 
+
+
+we can use -> uvicorn name-of-dir.name-of-python-file:name-of-fastapi-instance --reload
+to run a file inside a dir other than that which were in or better still the venv is in
+
+to change port use for debuging purposses
+import uvicorn
+
+#at the bottom of the file
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port="new port number")
