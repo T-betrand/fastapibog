@@ -1,7 +1,21 @@
 path parameters -> 
 query parameters ->  limiting query number, incase of default parameters all should be given to do an execption, we got to use the optional keyword from typing
 request body -> 
-linking a model to an sqlite database
+linking a model to an sqlite database -> sqlalchemy is required [ORM is used]
+store model info into database -> 
+get model info from database -> 
+exeptions and status codes -> 
+response model :: response schemas -> [hiding output fields]
+creating a user -> 
+hashing -> 
+using docs tags ->
+relationships -> 
+routers ->
+managing large apps ->
+login in system -> 
+JWT authentication -> 
+routes behind authentication -> 
+deploy on deta ->
 pyndantic -> 
 
 

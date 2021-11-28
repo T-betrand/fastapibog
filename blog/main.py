@@ -1,14 +1,16 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+
+from blog.routers import authentication
+from . import models
+from . database import engine
+from . routers import blog, user, authentication
 
 
 app = FastAPI()
 
-class Blog(BaseModel):
-    title: str
-    body: str
 
-#CRUD
-@app.post("/blog")
-def create_blog(request: Blog):
-    return request 
+models.Base.metadata.create_all(engine)
+
+app.include_router(authentication.router)
+app.include_router(blog.router)
+app.include_router(user.router)

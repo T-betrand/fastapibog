@@ -2,3 +2,6 @@ __pycache__
 nv
 .DS_Store
 topics.txt
+RAPI.py
+.vscode
+blog.db
